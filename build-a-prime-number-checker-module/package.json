@@ -1,0 +1,14 @@
+{
+  "name": "prime-number-checker",
+  "version": "1.0.0",
+  "description": "Modul sederhana untuk memeriksa apakah suatu angka adalah bilangan prima.",
+  "keywords": [
+    "prime",
+    "number",
+    "checker",
+    "math"
+  ],
+  "license": "MIT",
+  "author": "Nama Anda",
+  "type": "commonjs"
+}
