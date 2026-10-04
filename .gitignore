@@ -1,3 +1,5 @@
 node_modules
 /.logs
 config/token.txt
+.env
+config/token.txt

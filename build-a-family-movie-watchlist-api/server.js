@@ -38,7 +38,7 @@ app.post('/api/auth/login', async (req, res) => {
   // 4. Buat dan kirim token JWT
   const token = jwt.sign(
     { id: user.id, role: user.role, username: user.username }, 
-    process.env.JWT_SECRET || 'supersecretkey'
+    process.env.JWT_SECRET
   );
 
   res.status(200).json({ token });

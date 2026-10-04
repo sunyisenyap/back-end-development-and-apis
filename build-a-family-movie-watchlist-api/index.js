@@ -6,7 +6,8 @@ import watchlistRoutes from "./routes/watchlist.js";
 import { findByUsername } from "./utils/db.js";
 
 const PORT = process.env.PORT || 3000;
-const JWT_SECRET = process.env.JWT_SECRET || 'supersecretkey';
+const JWT_SECRET = process.env.JWT_SECRET;
+if (!JWT_SECRET) throw new Error("JWT_SECRET belum di-set di .env");
 const app = express();
 
 app.use(helmet());
